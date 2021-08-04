@@ -92,6 +92,7 @@ services:
     parameters:
       name: Wazi Codeready Workspaces
       documentationUrl: https://ibm.biz/wazi-crw-doc
+      iconUrl: https://raw.githubusercontent.com/IBM/zopeneditor-about/master/che/images/ibm-wazi-development-client.svg
       lifecyclePhase: CODE
       description: CRW description
 
