@@ -230,6 +230,12 @@ services:
           $env.pipeline_type === 'tekton' ? 'manual-run' : true
   webide:
     service_id: customtool
+    parameters:
+      name: Wazi Codeready Workspaces
+      documentationUrl: https://ibm.biz/wazi-crw-doc
+      lifecyclePhase: CODE
+      description: CRW description
+
   devops-insights:
     service_id: draservicebroker
 form:
