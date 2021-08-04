@@ -41,7 +41,7 @@ template:
 toolchain:
   name: >
     $env.toolchainName ? '{{toolchainName}}' :
-      'simple-toolchain-{{timestamp}}'
+      'simple-zos-toolchain-{{timestamp}}'
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
@@ -75,13 +75,13 @@ services:
         if ( $env.template.info.hosted_region !== "" ) {
           "https://{{template.info.hosted_region}}.git.cloud.ibm.com/open-toolchain/simple-toolchain-hosted"
         } else {
-          "https://github.com/open-toolchain/simple-toolchain-hosted"
+          "https://github.com/kristinochka/simple-zos-toolchain"
         }
       source_repo_url: >
         if ( $env.template.info.hosted_region !== "" ) {
           "https://{{template.info.hosted_region}}.git.cloud.ibm.com/open-toolchain/simple-toolchain-hosted"
         } else {
-          "https://github.com/open-toolchain/simple-toolchain-hosted"
+          "https://github.com/kristinochka/simple-zos-toolchain"
         }
       type: "clone"
       has_issues: false
