@@ -2,7 +2,7 @@
 
 ### Continuously deliver a Cloud Foundry app with IBM hosted repos and issue tracking
 
-This Hello World application uses Node.js and includes a DevOps toolchain that is preconfigured for continuous delivery, source control, issue tracking, and online editing.
+This is a sample of zOS batch application that runs in an IBM Cloud toolchain and uses GitLab for CI/CD and Wazi CodeReady Workspaces for online editing. 
 
 ### To get started, click **Create toolchain**.
 
