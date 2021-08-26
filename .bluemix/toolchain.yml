@@ -54,13 +54,13 @@ services:
       repo_url: >
         $env.type === 'link' ? $env.app_repo :
           $env.sourceZipUrl ? '{{sourceZipUrl}}' :
-            $env.template.info.hosted_region !== "" ? 'https://{{template.info.hosted_region}}.git.cloud.ibm.com/open-toolchain/node-hello-world':
-          'https://github.com/IBM/zopeneditor-sample'
+            $env.template.info.hosted_region !== "" ? 'https://{{template.info.hosted_region}}.git.cloud.ibm.com/IBM/zopeneditor-about':
+          'https://gitlab.com/kmayoz/zopeneditor-sample'
       source_repo_url: >
         $env.type === 'fork' || $env.type === 'clone' ? $env.app_repo :
           $env.sourceZipUrl ? '{{sourceZipUrl}}' : 
-            $env.template.info.hosted_region !== "" ? 'https://{{template.info.hosted_region}}.git.cloud.ibm.com/open-toolchain/node-hello-world':
-            'https://github.com/IBM/zopeneditor-sample'
+            $env.template.info.hosted_region !== "" ? 'https://{{template.info.hosted_region}}.git.cloud.ibm.com/IBM/zopeneditor-about':
+            'https://gitlab.com/kmayoz/zopeneditor-sample'
       type: $env.type || 'clone'
       has_issues: true
       enable_traceability: true
